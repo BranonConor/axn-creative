@@ -1,0 +1,17 @@
+# Header
+menu: 
+  Home: /
+  About: /about
+  Projects: /projects
+  Blog: /blog
+  Contact: /contact
+
+# URL
+blog: /blog
+home: /index.html
+
+# Read More Text
+excerpt_link: Read More
+
+# Asset
+video: /css/images/axn-creative-web-video.mov
