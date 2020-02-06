@@ -6,10 +6,6 @@ menu:
   Blog: /blog
   Contact: /contact
 
-# URL
-blog: /blog
-home: /index.html
-
 # Read More Text
 excerpt_link: Read More
 
