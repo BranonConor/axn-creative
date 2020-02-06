@@ -97,6 +97,12 @@ p {
     border-radius: 5%;
 }
 /* --- HEADER --- */
+
+/* --- POSTS --- */
+.post-full img {
+    width: 350px;
+    height: auto;
+}
 /* --- ABOUT --- */
 .about {
     height: auto; 

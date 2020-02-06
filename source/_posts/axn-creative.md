@@ -8,10 +8,20 @@ categories:
 type: project
 excerpt: 'This site was quite an interesting project as well. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.'
 ---
+![Product Image](/css/images/phone-mockup.PNG "Logo") ![Product Image](/css/images/desktop-mockup.PNG "Logo")
+
 This site was quite an interesting project as well. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.
-## Tech Stack
+## Project at a Glance
+```
+const projectFlow = [
+    {Trello: 'Ticketing'},
+    {Git: 'Version Control'},
+    {GitHub: 'Repo Management'}
+];
+```
+
 ```[javascript]
-let TechStack = [
+const TechStack = [
     HTML,
     CSS,
     Javascript / EJS,
@@ -19,5 +29,5 @@ let TechStack = [
     HexoJS,
     Formspree.io,
     Markdown
-]
+];
 ```
