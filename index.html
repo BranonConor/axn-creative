@@ -1,0 +1,98 @@
+<!-- THIS PAGE DEFINES WHAT APPEARS ON EVERY PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Tags -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<link rel="stylesheet" href="index.html.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    <title>AXN Creative</title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <!-- The Video (If it's the Homepage) -->
+    
+        <div class="video">
+    <video autoplay loop muted id="myVideo">
+        <source src='/css/images/axn-creative-web-video.MOV' type="video/mp4">
+    </video>
+</div>
+    
+    <!-- Navigation -->
+    <div class="nav">
+    <div class="brand">
+
+    </div>
+    <div class="navbar">
+        <!-- Pull each menu item in from the local _config.yml file -->
+        
+            <a class='navlink' href='index.html'>Home</a>
+        
+            <a class='navlink' href='/about'>About</a>
+        
+            <a class='navlink' href='/projects'>Projects</a>
+        
+            <a class='navlink' href='/blog'>Blog</a>
+        
+            <a class='navlink' href='/contact'>Contact</a>
+        
+    </div>
+    <div class="social">
+        <a href="#" target='_blank'></a>
+        <a href="#" target='_blank'></a>
+        <a href="#" target='_blank'></a>
+    </div>
+</div>
+    <main>
+        <!-- Header -->
+        <div class="container">
+            <!-- Blog Header: title + subtitle -->
+            <div class="header">
+    <!-- Pull the blog title from Hexo -->
+    <h1 class="site-title">The AXN Creative</h1>
+    <p class="blog-description">
+        <!-- if there is a subtitle, post that too -->
+        
+    </p>
+</div>
+            <!-- MAIN CONTENT -->
+            <!-- 
+            pulls in index.ejs, which applies page format 
+            and pulls in page-full.ejs to bring in content
+            -->
+            <!-- NOTE: layout.ejs passes in "body", which is this document according to Hexo -->
+<!-- This page should therefore contain home-page content, generally -->
+<!-- add pagination partial -->
+<nav>
+    <ul class="pages">
+        
+        
+    </ul>
+</nav>
+            <!-- Homepage Content (If it's the Homepage) -->
+            
+                <div class="homepage">
+    <h2>This is the main homepage content!</h2>
+</div>
+            
+            <!-- If it's the Projects Page, render projects.ejs-->
+            
+            <!-- If it's the Blog Page, render blog.ejs-->
+            
+        </div>
+    </main>
+    <footer class="footer">
+    <p>Web Design and Development by: <a href='/'>AXN Creative</a></p>
+    <p>Copyright 2020</p>
+    <p></p>
+</footer>
+    <!-- Scripts-->
+    
+<script src="index.html.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
