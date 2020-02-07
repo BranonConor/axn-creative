@@ -13,6 +13,8 @@ body {
     padding: 0;
     background-color: black;
     color: white;
+    max-width: 100%;
+    font-size: 1rem;
 }
 main {
     max-width: 100%;
@@ -68,6 +70,7 @@ p {
     letter-spacing: 5px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 2;
     top: 0;
     background: black;
 }
@@ -83,6 +86,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 80px;
+    width: 100vw;
 }
 .navlink {
     padding: 0 20px;
@@ -241,7 +245,7 @@ footer a:hover::after {
     }
 }
 @media only screen and (max-width: 640px) {
-    .nav {
-        
+    .navbar {
+        visibility: hidden;
     }
 }
