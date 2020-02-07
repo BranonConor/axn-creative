@@ -22,7 +22,7 @@ main {
 }
 a {
     text-decoration: none;
-    color: #a9D2D5;
+    color: rgb(94, 185, 192);
     position: relative;
 }
 a::after {
@@ -34,6 +34,9 @@ a::after {
     position: absolute;
     left: 0%;
     top: 90%;
+}
+a:hover {
+    color: black;
 }
 a:hover::after {
     width: 100%;
@@ -235,5 +238,10 @@ footer a:hover::after {
     .sidebar {
         flex-direction: column;
         align-items: center;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .nav {
+        
     }
 }
