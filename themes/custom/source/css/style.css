@@ -13,6 +13,8 @@ body {
     padding: 0;
     background-color: black;
     color: white;
+    max-width: 100%;
+    font-size: 1rem;
 }
 main {
     max-width: 100%;
@@ -22,8 +24,9 @@ main {
 }
 a {
     text-decoration: none;
-    color: #a9D2D5;
+    color: rgb(94, 185, 192);
     position: relative;
+    transition: 0.2s ease all;
 }
 a::after {
     content: '';
@@ -34,6 +37,9 @@ a::after {
     position: absolute;
     left: 0%;
     top: 90%;
+}
+a:hover {
+    color: black;
 }
 a:hover::after {
     width: 100%;
@@ -48,10 +54,15 @@ p {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+.nav-mobile {
+    display: none;
+}
 /* --- HERO STRIP --- */
 .video {
     min-width: 100%;
     height: auto;
+    position: relative;
+    z-index: 5;
 }
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -65,6 +76,7 @@ p {
     letter-spacing: 5px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 2;
     top: 0;
     background: black;
 }
@@ -75,11 +87,16 @@ p {
 .nav a:hover::after {
     width: 0%;
 }
+.display-none {
+    opacity: 0;
+    transition: 0.9s;
+}
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
+    width: 100vw;
 }
 .navlink {
     padding: 0 20px;
@@ -95,6 +112,9 @@ p {
     color: black;
     height: 100%;
     border-radius: 5%;
+}
+.hamburger {
+    display: none;
 }
 /* --- HEADER --- */
 
@@ -203,13 +223,69 @@ footer a:hover::after {
     }
 }
 @media only screen and (max-width: 900px) {
+ /*-- idk --- */
+}
+@media only screen and (max-width: 770px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .navbar {
+        display: none;
+        overflow: hidden;
+    }
+    .nav-mobile {
+        width: 100vw;
+        height: 0px;
+        transition: 0.6s ease-in;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -80px;
+    }
+    .revealNavMobile {
+        -webkit-transition: 0.6s; /* Safari 4+ */
+        -moz-transition: 0.6s; /* Fx 5+ */
+        -o-transition: 0.6s; /* Opera 12+ */
+        transition: 0.6s; /* IE 10+, Fx 29+, */
+        height: 25vh;
+        transform: translatex(-20px) translateY(80px);
+    }
+    .mobileLink {
+        text-align: right;
+        padding: 5px;
+        letter-spacing: 3px;
+        color: #eee;
+        z-index: 5;
+        max-width: 100vw;
+        transition: 0.3s;
+    }
+    .mobileLink:hover {
+        color: rgb(94, 185, 192);
+    }
     .hamburger {
         display: inline-block;
         cursor: pointer;
         width: 20px;
         height: auto;
+        padding: 10px 40px 10px 10px;
     } 
-    .bar1, .bar2, .bar3 {
+    .bar1, .bar3 {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.6s;
+    }
+    .bar2 {
         width: 30px;
         height: 4px;
         background-color: white;
@@ -222,18 +298,12 @@ footer a:hover::after {
     }
     /*  translate(3px, -5px) */
     .change .bar2 {
-        transform: translateX(-300px);
+        transform: rotate(125deg) translateY(-10px) translateX(30px);
         opacity: 0;
     }
     .change .bar3 {
         -webkit-transform: rotate(45deg);
         transform: translateY(-10px) rotate(48deg);
     /*  translate(-9px, -12px) */
-    }
-}
-@media only screen and (max-width: 770px) {
-    .sidebar {
-        flex-direction: column;
-        align-items: center;
     }
 }
