@@ -6,7 +6,7 @@ layout: post
 tags: ['Web Design', 'Web Development', 'HexoJS']
 categories: 
 type: project
-excerpt: 'This site was quite an interesting project as well. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.'
+excerpt: 'This site itself was a fun project. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.'
 ---
 ![Product Image](/css/images/phone-mockup.PNG "Logo")
 
@@ -30,3 +30,6 @@ Static site generators provide a way to update and manage site content quickly a
     * Hexo.js
     * Formspree.io
     * Markdown
+
+## HexoJS - Want to read more about it? 
+It's really cool technology. Peruse my blog for some more in-depth posts about it! 
