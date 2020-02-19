@@ -6,7 +6,10 @@ tags:
 categories:
 type: project
 excerpt: 'ErikaWinston.com is a website for a massage therapy and bodywork practitioner.'
+thumbnail: /css/images/ew-thumbnail.png
 ---
+![Product Image](/css/images/ew-thumbnail.png "Site Excerpt")
+
 ErikaWinston.com is a website for a massage therapy and bodywork practitioner.
 
 ## Project at a Glance

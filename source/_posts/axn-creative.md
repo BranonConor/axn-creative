@@ -7,8 +7,9 @@ tags: ['Web Design', 'Web Development', 'HexoJS']
 categories: 
 type: project
 excerpt: 'This site itself was a fun project. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.'
+thumbnail: /css/images/axn-creative-thumbnail.png
 ---
-![Product Image](/css/images/phone-mockup.PNG "Logo")
+![Product Image](/css/images/axn-creative-thumbnail.png "Logo")
 
 This site was built on a framework called HexoJS, a "static site generator" that offers incredible speed and templating capabilities all essentially within the front end. This site was constructed from scratch, sporting a unique theme built with vanilla HTML, CSS, and Javascript.
 

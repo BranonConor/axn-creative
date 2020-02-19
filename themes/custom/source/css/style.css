@@ -232,10 +232,23 @@ footer a:hover::after {
     text-align: left;
 }
 .post-full img {
-    width: 320px;
+    width: 60%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 9px 1px #999;
 }
-
+/* Article Snippet */
+.post img {
+    height: 25%;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.4s ease all;
+}
+.post:hover img {
+    transform: translateY(-10px) scale(1.2);
+    box-shadow: 0px 2px 9px 1px #999;
+}
 
 
 /* --- MEDIA QUERIES --- */

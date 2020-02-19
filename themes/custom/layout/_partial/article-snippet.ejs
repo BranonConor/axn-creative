@@ -1,4 +1,8 @@
 <div class="post">
+    <!-- Thumbnail Image -->
+    <% if (item.thumbnail) { %>
+        <img src='<%- item.thumbnail %>' alt='Post Thumbnail'>
+    <% } %>
     <!-- Title -->
     <h2 class='post-title'>
         <!-- items are just posts being passed in from index.ejs's function -->

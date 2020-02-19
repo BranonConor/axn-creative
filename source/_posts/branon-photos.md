@@ -4,7 +4,10 @@ layout: post
 image: 
 type: project
 excerpt: 'BranonPhotos.com is a web gallery for my freelance photography.'
+thumbnail: /css/images/branon-photos-thumbnail.png
 ---
+![Product Image](/css/images/branon-photos-thumbnail.png "Site Excerpt")
+
 BranonPhotos.com is a photography portfolio website.  
 
 ### Project Flow
