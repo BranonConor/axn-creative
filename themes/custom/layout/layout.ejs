@@ -26,12 +26,16 @@
                 <%- partial('_partial/homepage') %>
             <% } %>
             <!-- If it's the Projects Page, render projects.ejs-->
-            <% if (page.layout == 'archive' && page.type == 'project') { %>
+            <% if (page.type == 'projects-page') { %>
                 <%- partial('_partial/projects') %>
             <% } %>
             <!-- If it's the Blog Page, render blog.ejs-->
-            <% if (page.layout == 'archive' && page.type == 'blog') { %>
+            <% if (page.type == 'blog-page') { %>
                 <%- partial('_partial/blog') %>
+            <% } %>
+            <!-- If it's the Blog Page, render blog.ejs-->
+            <% if (page.layout == 'post') { %>
+                <%- partial('_partial/sidebar') %>
             <% } %>
         </div>
     </main>

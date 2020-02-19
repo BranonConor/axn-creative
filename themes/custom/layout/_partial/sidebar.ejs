@@ -1,10 +1,14 @@
 <div class="sidebar">
     <div class="sidebar-module">
-        <h4>Projects</h4>
+        <h4>Recent</h4>
         <ul class="list-styled">
-            <% let projects = site.posts %>
-            <% projects.forEach(function(item) { %>
-                <% if (item.type === 'project') { %>
+            <% let posts = site.posts; %>
+            <% let news = []; %>
+            <% for (let i = posts.length-1; i > posts.length-3; i--) { %>
+                <% news.push(posts.data[i]); %>
+            <% } %>
+            <% news.forEach(function(item) { %>
+                <% if (item.type === 'blog' || 'project') { %>
                     <li><a href="<%- config.root %><%- item.path %>"><%- item.title %></a></li>
                 <% } %>
             <% }); %>

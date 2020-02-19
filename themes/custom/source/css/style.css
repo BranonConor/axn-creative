@@ -118,11 +118,6 @@ p {
 }
 /* --- HEADER --- */
 
-/* --- POSTS --- */
-.post-full img {
-    width: 350px;
-    height: auto;
-}
 /* --- ABOUT --- */
 .about {
     height: auto; 
@@ -211,6 +206,18 @@ footer a:hover::after {
     background-color:#eee;
 }
 
+
+/* ------------ MARKDOWN FILE STYLING -------------*/
+.post-full h3, .post-full h4, .post-full h5, .post-full h6 {
+    text-align: left;
+}
+.post-full img {
+    width: 320px;
+    height: auto;
+}
+
+
+
 /* --- MEDIA QUERIES --- */
 @media only screen and (max-width: 1200px) {
     .post-container {
@@ -223,7 +230,26 @@ footer a:hover::after {
     }
 }
 @media only screen and (max-width: 900px) {
- /*-- idk --- */
+    .column-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .column-half {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px 0;
+        margin: 5px;
+    }
 }
 @media only screen and (max-width: 770px) {
     .sidebar {

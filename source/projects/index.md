@@ -1,7 +1,7 @@
 ---
 title: Projects
-layout: archive
+layout: 
 date: 2020-02-04 16:25:42
-type: project
+type: projects-page
 ---
 Here's a bunch of projects!!!

@@ -1,7 +1,7 @@
 ---
 title: Contact
-layout: contact
+layout: page
 date: 2020-02-04 16:35:04
-type: 
+type: page
 ---
 This is the contact page!
