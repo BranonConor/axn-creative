@@ -156,6 +156,10 @@ table {
     margin: 0;
 }
 .sidebar-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 175px;
     height: 175px;
     background: none;
@@ -165,7 +169,7 @@ table {
     border: 3px solid rgba(230,230,230, 0);
     padding: 10px;
     margin: 10px; 
-    overflow: hidden;
+    overflow-y: scroll;
     position: relative;
     transition: 0.3s ease all;
 }
@@ -196,6 +200,22 @@ table {
     border: 3px solid rgba(230,230,230, 1);
     box-shadow: 0px 4px 10px 2px #eee;
     transform: translateY(-5px);
+}
+.sidebar-module i {
+    transition: 0.5s ease all;
+}
+.sidebar-module:hover i {
+    transform: translateY(-8px) scale(1.25);
+}
+.sidebar-module h4 {
+    margin: 15px 0 0 0;
+}
+.sidebar-module ul {
+    margin-top: 10px;
+}
+.sidebar-module hr {
+    border-color: #FFF;
+    width: 45%;
 }
 /* --- FOOTER --- */
 footer {
