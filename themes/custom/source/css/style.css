@@ -366,3 +366,8 @@ footer a:hover::after {
     /*  translate(-9px, -12px) */
     }
 }
+@media only screen and (max-width: 640px) {
+    .post-full img {
+        width: 75%;
+    }
+}
