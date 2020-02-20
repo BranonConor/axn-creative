@@ -3,6 +3,15 @@
 <html lang="en">
 <!-- Head Tags -->
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158315403-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158315403-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,7 +27,7 @@
     <!-- Navigation -->
     <div class="nav">
     <div class="brand">
-
+        
     </div>
     <div class="navbar">
         <!-- Pull each menu item in from the local _config.yml file -->
@@ -38,6 +47,24 @@
         <a href="#" target='_blank'></a>
         <a href="#" target='_blank'></a>
         <a href="#" target='_blank'></a>
+    </div>
+    <div class='hamburger' onclick='hamburgerClick(this)'>
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+    </div>
+    <div class='nav-mobile'>
+        
+            <a class='mobileLink display-none' href='../index.html'>Home</a>
+        
+            <a class='mobileLink display-none' href='../about'>About</a>
+        
+            <a class='mobileLink display-none' href='../projects'>Projects</a>
+        
+            <a class='mobileLink display-none' href='../blog'>Blog</a>
+        
+            <a class='mobileLink display-none' href='../contact'>Contact</a>
+        
     </div>
 </div>
     <main>
@@ -87,6 +114,10 @@
         
             
                 <div class="post">
+    <!-- Thumbnail Image -->
+    
+        <img src='/css/images/branon-photos-thumbnail.png' alt='Post Thumbnail'>
+    
     <!-- Title -->
     <h2 class='post-title'>
         <!-- items are just posts being passed in from index.ejs's function -->
@@ -96,14 +127,18 @@
     </h2>
     <!-- Author and Date -->
     <p class='post-data'>
-        2020-01-29
+        January 2020
         
     </p>
     <!-- Post Content -->
-    <p>BranonPhotos.com is a photography portfolio website.  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let TechStack &#x3D; [</span><br><span class="line">    HTML,</span><br><span class="line">    CSS,</span><br><span class="line">    Javascript</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
+    BranonPhotos.com is a web gallery for my freelance photography.
     <!-- If we are displaying an excerpt, add read more link -->
+    
+        <p class='snippet'>
+            <a href="../2020/01/29/branon-photos/">
+                Read More
+            </a>
+        </p>
     
 </div>
             
@@ -112,6 +147,10 @@
         
             
                 <div class="post">
+    <!-- Thumbnail Image -->
+    
+        <img src='/css/images/ew-thumbnail.png' alt='Post Thumbnail'>
+    
     <!-- Title -->
     <h2 class='post-title'>
         <!-- items are just posts being passed in from index.ejs's function -->
@@ -121,7 +160,7 @@
     </h2>
     <!-- Author and Date -->
     <p class='post-data'>
-        2020-02-05
+        February 2020
         
     </p>
     <!-- Post Content -->
@@ -139,6 +178,10 @@
         
             
                 <div class="post">
+    <!-- Thumbnail Image -->
+    
+        <img src='/css/images/axn-creative-thumbnail.png' alt='Post Thumbnail'>
+    
     <!-- Title -->
     <h2 class='post-title'>
         <!-- items are just posts being passed in from index.ejs's function -->
@@ -148,11 +191,11 @@
     </h2>
     <!-- Author and Date -->
     <p class='post-data'>
-        2020-02-05
+        February 2020
         
     </p>
     <!-- Post Content -->
-    This site was quite an interesting project as well. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.
+    This site itself was a fun project. Built on a framework called HexoJS, it offers incredible speed and templating capabilities all essentially within the front end.
     <!-- If we are displaying an excerpt, add read more link -->
     
         <p class='snippet'>
@@ -178,49 +221,95 @@
     <!-- Sidebar to navigate all tags and categories -->
     <div class="sidebar">
     <div class="sidebar-module">
-        <h4>Projects</h4>
+        <i class="fas fa-pencil-ruler"></i>
+        <h4>Recent</h4>
+        <hr>
         <ul class="list-styled">
             
             
-                
-                    <li><a href="/2020/01/29/branon-photos/">BranonPhotos.com</a></li>
-                
             
                 
             
                 
-                    <li><a href="/2020/02/05/erika-winston/">ErikaWinston.com</a></li>
+            
+            
+                
+                    <li><a href="/2020/02/06/Post-from-Dashboard/">Post from Dashboard!</a></li>
                 
             
                 
                     <li><a href="/2020/02/05/axn-creative/">AXNCreative.com</a></li>
                 
             
+        </ul>
+    </div>
+    <div class="sidebar-module">
+        <i class="fas fa-history"></i>
+        <h4>Archives</h4>
+        <hr>
+        <ul class="list-styled">
+            
+            
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+            
+            
+            
+                
+                    <li><a href="/2020/01/29/branon-photos/">January 2020</a></li>
+                
+            
+                
+                    <li><a href="/2020/02/03/first-blog/">February 2020</a></li>
+                
+            
+                
+            
+                
+            
                 
             
         </ul>
     </div>
     <div class="sidebar-module">
-        <h4>Archives</h4>
-        <ul class="list-styled">
-            <li><a href="#">March 2014</a></li>
-            <li><a href="#">February 2014</a></li>
-            <li><a href="#">January 2014</a></li>
-            <li><a href="#">December 2013</a></li>
-            <li><a href="#">November 2013</a></li>
-        </ul>
-    </div>
-    <div class="sidebar-module">
+        <i class="fas fa-location-arrow"></i>
         <h4>Elsewhere</h4>
+        <hr>
         <ul class="list-styled">
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://github.com/BranonConor" target="_blank" rel="noopener">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/branonconor/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/bran.js/" target="_blank" rel="noopener">Instagram</a></li>
         </ul>
     </div> 
 </div>
 </div>
 
+            
+            <!-- If it's the Blog Page, render blog.ejs-->
             
             <!-- If it's the Blog Page, render blog.ejs-->
             
@@ -232,7 +321,8 @@
     <p></p>
 </footer>
     <!-- Scripts-->
-    
+    <script src="https://kit.fontawesome.com/8e3de40b11.js" crossorigin="anonymous"></script>
+
 <script src="../js/index.js"></script>
 
 </body>

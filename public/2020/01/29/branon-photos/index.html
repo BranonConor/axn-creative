@@ -3,6 +3,15 @@
 <html lang="en">
 <!-- Head Tags -->
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158315403-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158315403-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,7 +27,7 @@
     <!-- Navigation -->
     <div class="nav">
     <div class="brand">
-
+        
     </div>
     <div class="navbar">
         <!-- Pull each menu item in from the local _config.yml file -->
@@ -39,6 +48,24 @@
         <a href="#" target='_blank'></a>
         <a href="#" target='_blank'></a>
     </div>
+    <div class='hamburger' onclick='hamburgerClick(this)'>
+        <div class='bar1'></div>
+        <div class='bar2'></div>
+        <div class='bar3'></div>
+    </div>
+    <div class='nav-mobile'>
+        
+            <a class='mobileLink display-none' href='../../../../index.html'>Home</a>
+        
+            <a class='mobileLink display-none' href='../../../../about'>About</a>
+        
+            <a class='mobileLink display-none' href='../../../../projects'>Projects</a>
+        
+            <a class='mobileLink display-none' href='../../../../blog'>Blog</a>
+        
+            <a class='mobileLink display-none' href='../../../../contact'>Contact</a>
+        
+    </div>
 </div>
     <main>
         <!-- Header -->
@@ -57,20 +84,31 @@
             pulls in index.ejs, which applies page format 
             and pulls in page-full.ejs to bring in content
             -->
-            <!-- Note that on page.ejs, "page" was passed in as the "item" -->
+            
+<!-- Note that on page.ejs, "page" was passed in as the "item" -->
 <div class="post-full">
     <!-- Title -->
     <h2 class="post-title">
-        BranonPhotos.com
+        <a href="/2020/01/29/branon-photos/">
+            BranonPhotos.com
+        </a>
     </h2>
     <!-- Date and Author -->
     <p class="post-meta">
+        January 2020
         
     </p>
     <!-- Content -->
-    <p>BranonPhotos.com is a photography portfolio website.  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let TechStack &#x3D; [</span><br><span class="line">    HTML,</span><br><span class="line">    CSS,</span><br><span class="line">    Javascript</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
+    <p><img src="/css/images/branon-photos-thumbnail.png" alt="Product Image" title="Site Excerpt"></p>
+<p>BranonPhotos.com is a photography portfolio website.  </p>
+<h3 id="Project-Flow"><a href="#Project-Flow" class="headerlink" title="Project Flow"></a>Project Flow</h3><pre><code>* Trello - ticketing and project management
+* Github - repository/code management
+* Git - version control</code></pre><h3 id="Tech-Stack"><a href="#Tech-Stack" class="headerlink" title="Tech Stack"></a>Tech Stack</h3><pre><code>* HTML
+* CSS
+* Javascript
+* Formspree.io
+* FancyboxJS
+* jQuery</code></pre>
     <hr />
     <!-- Tags and Categories links -->
     
@@ -84,6 +122,96 @@
             
             <!-- If it's the Blog Page, render blog.ejs-->
             
+            <!-- If it's the Blog Page, render blog.ejs-->
+            
+                <div class="sidebar">
+    <div class="sidebar-module">
+        <i class="fas fa-pencil-ruler"></i>
+        <h4>Recent</h4>
+        <hr>
+        <ul class="list-styled">
+            
+            
+            
+                
+            
+                
+            
+            
+                
+                    <li><a href="/2020/02/06/Post-from-Dashboard/">Post from Dashboard!</a></li>
+                
+            
+                
+                    <li><a href="/2020/02/05/axn-creative/">AXNCreative.com</a></li>
+                
+            
+        </ul>
+    </div>
+    <div class="sidebar-module">
+        <i class="fas fa-history"></i>
+        <h4>Archives</h4>
+        <hr>
+        <ul class="list-styled">
+            
+            
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+                
+                    
+                    
+                
+            
+            
+            
+            
+                
+                    <li><a href="/2020/01/29/branon-photos/">January 2020</a></li>
+                
+            
+                
+                    <li><a href="/2020/02/03/first-blog/">February 2020</a></li>
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+    </div>
+    <div class="sidebar-module">
+        <i class="fas fa-location-arrow"></i>
+        <h4>Elsewhere</h4>
+        <hr>
+        <ul class="list-styled">
+            <li><a href="https://github.com/BranonConor" target="_blank" rel="noopener">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/branonconor/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/bran.js/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+    </div> 
+</div>
+            
         </div>
     </main>
     <footer class="footer">
@@ -92,7 +220,8 @@
     <p></p>
 </footer>
     <!-- Scripts-->
-    
+    <script src="https://kit.fontawesome.com/8e3de40b11.js" crossorigin="anonymous"></script>
+
 <script src="../../../../js/index.js"></script>
 
 </body>
