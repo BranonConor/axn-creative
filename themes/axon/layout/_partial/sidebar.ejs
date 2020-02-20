@@ -32,7 +32,9 @@
             <% console.log(archiveDates) %>
             <% console.log(archiveLinks) %>
             <% for (let i = 0; i < archiveDates.length; i++) { %>
-                <% if (archiveDates[i] !== archiveDates[i-1]) { %>
+                <% if (i == 0) { %>
+                    <li><a href="<%- config.root %><%- archiveLinks[0] %>"><%- archiveDates[0] %></a></li>
+                <% } else if (archiveDates[i] !== archiveDates[i-1]) { %>
                     <li><a href="<%- config.root %><%- archiveLinks[i] %>"><%- archiveDates[i] %></a></li>
                 <% } %>
             <% } %>
