@@ -21,11 +21,21 @@
         <h4>Archives</h4>
         <hr>
         <ul class="list-styled">
-            <li><a href="#">March 2014</a></li>
-            <li><a href="#">February 2014</a></li>
-            <li><a href="#">January 2014</a></li>
-            <li><a href="#">December 2013</a></li>
-            <li><a href="#">November 2013</a></li>
+            <% let archiveDates = [] %>
+            <% let archiveLinks = [] %>
+            <% posts.forEach(function(item) { %>
+                <% if (item.date) { %>
+                    <% archiveDates.push(item.date.format(config.date_format)); %>
+                    <% archiveLinks.push(item.path); %>
+                <% } %>
+            <% }); %>
+            <% console.log(archiveDates) %>
+            <% console.log(archiveLinks) %>
+            <% for (let i = 0; i < archiveDates.length; i++) { %>
+                <% if (archiveDates[i] !== archiveDates[i-1]) { %>
+                    <li><a href="<%- config.root %><%- archiveLinks[i] %>"><%- archiveDates[i] %></a></li>
+                <% } %>
+            <% } %>
         </ul>
     </div>
     <div class="sidebar-module">
@@ -33,9 +43,9 @@
         <h4>Elsewhere</h4>
         <hr>
         <ul class="list-styled">
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://github.com/BranonConor">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/branonconor/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/bran.js/">Instagram</a></li>
         </ul>
     </div> 
 </div>
