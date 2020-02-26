@@ -8,12 +8,6 @@ const expandMenu = () => {
     // take the mobile nav menu and reveal it on a hamburger click
     navMobile.classList.toggle('revealNavMobile');
 }
-const showMobileMenu = () => {
-    // loop through each mobile menu link, remove the "display none" and 
-    for (let i = 0; i< mobileLinks.length; i++) {
-        mobileLinks[i].classList.toggle('display-none');
-    }
-}
 
 // Burger animation
 const hamburgerClick = (x) => {
@@ -23,5 +17,4 @@ const hamburgerClick = (x) => {
 // Expand Mobile Menu
 hamburger.addEventListener('click', function() {
     expandMenu();
-    setTimeout(showMobileMenu, 250);
 });

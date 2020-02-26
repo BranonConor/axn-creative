@@ -54,9 +54,6 @@ p {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
-.nav-mobile {
-    display: none;
-}
 /* --- HERO STRIP --- */
 .video {
     min-width: 100%;
@@ -87,9 +84,14 @@ p {
 .nav a:hover::after {
     width: 0%;
 }
-.display-none {
-    opacity: 0;
-    transition: 0.9s;
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-mobile {
+    height: 0;
+    overflow: hidden;
 }
 .navbar {
     display: flex;
@@ -112,6 +114,15 @@ p {
     color: black;
     height: 100%;
     border-radius: 5%;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.brand img {
+    display: none;
 }
 .hamburger {
     display: none;
@@ -291,41 +302,51 @@ footer a:hover::after {
     }
 }
 @media only screen and (max-width: 640px) {
-    .nav {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+    .video {
+        display: none;
     }
+    .brand img {
+        display: flex;
+        width: 70px;
+        height: auto;
+        border: 1px solid lightgrey;
+        border-radius: 100%;
+        -webkit-animation:spin 10s linear infinite;
+        -moz-animation:spin 10s linear infinite;
+        animation:spin 10s linear infinite;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
     .navbar {
         display: none;
-        overflow: hidden;
     }
     .nav-mobile {
         width: 100vw;
         height: 0px;
-        transition: 0.6s ease-in;
+        transition: 0.4s ease-in;
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
-        top: -80px;
+        top: 0;
+        line-height: 5px;
     }
     .revealNavMobile {
-        -webkit-transition: 0.6s; /* Safari 4+ */
-        -moz-transition: 0.6s; /* Fx 5+ */
-        -o-transition: 0.6s; /* Opera 12+ */
-        transition: 0.6s; /* IE 10+, Fx 29+, */
+        -webkit-transition: 0.5s; /* Safari 4+ */
+        -moz-transition: 0.5s; /* Fx 5+ */
+        -o-transition: 0.5s; /* Opera 12+ */
+        transition: 0.5s; /* IE 10+, Fx 29+, */
         height: 25vh;
-        transform: translatex(-20px) translateY(80px);
+        line-height: 25px;
     }
     .mobileLink {
         text-align: right;
         padding: 5px;
         letter-spacing: 3px;
         color: #eee;
-        z-index: 5;
         max-width: 100vw;
-        transition: 0.3s;
+        transition: 0.4s;
     }
     .mobileLink:hover {
         color: rgb(94, 185, 192);
@@ -335,7 +356,7 @@ footer a:hover::after {
         cursor: pointer;
         width: 20px;
         height: auto;
-        padding: 10px 40px 10px 10px;
+        padding: 10px 30px 10px 10px;
     } 
     .bar1, .bar3 {
         width: 30px;
