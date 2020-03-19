@@ -242,6 +242,9 @@ footer a:hover::after {
 
 
 /* ------------ MARKDOWN FILE STYLING -------------*/
+.post-full {
+    padding: 20px 10%;
+}
 .post-full h3, .post-full h4, .post-full h5, .post-full h6 {
     text-align: left;
 }
