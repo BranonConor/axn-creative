@@ -1,5 +1,5 @@
 ---
-title: TheraMind
+title: TheraMind Clinics
 layout: post
 date: 2020-03-19 13:41:36
 tags:
