@@ -12,7 +12,7 @@ thumbnail: /css/images/branon-conor.png
 
 BranonConor.com is my persdonal portfolio site. This site was designed with Figma, and then iterated over with development until it looked just right. 
 
-This site serves as a landing page for 'me'. It utilizes some very modern technologies and 
+This site serves as a landing page for 'me'. It utilizes some very modern technologies and gets the job done!
 
 ## Project at a Glance
 
