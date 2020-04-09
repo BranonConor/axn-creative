@@ -31,4 +31,4 @@ This app is currently still in production but it's almost up and running!
     * Heroku
 
 ## Live Mockup 
-Coming soon! 
+This site's prototype can be viewed at: [What Do I Wear?](https://what-do-i-wear.herokuapp.com) 
