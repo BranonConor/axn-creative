@@ -353,6 +353,9 @@ footer a:hover::after {
         height: 75%;
         z-index: 3;
     }
+    .services-strip p {
+        padding: 0 30px;
+    }
     .service-card svg {
         height: 50px;
     }
