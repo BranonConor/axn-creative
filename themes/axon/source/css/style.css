@@ -352,12 +352,14 @@ footer a:hover::after {
     .services-strip svg {
         height: 75%;
         z-index: 3;
+        top: -75px;
     }
     .services-strip p {
         padding: 0 30px;
     }
     .service-card svg {
         height: 50px;
+        top: 0;
     }
 }
 @media only screen and (max-width: 900px) {
