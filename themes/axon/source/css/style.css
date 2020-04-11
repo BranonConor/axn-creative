@@ -76,6 +76,9 @@ p {
     z-index: 5;
     top: 0;
     background: black;
+    -webkit-box-shadow: -2px -1px 46px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 46px -12px rgba(0,0,0,0.75);
+    box-shadow: -2px -1px 46px -12px rgba(0,0,0,0.75);
 }
 .nav a {
     color: white;
@@ -388,7 +391,7 @@ footer a:hover::after {
     }
     .brand img {
         display: flex;
-        width: 200px;
+        width: 250px;
         height: auto;
     }
     .navbar {
