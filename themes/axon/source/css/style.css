@@ -327,7 +327,17 @@ footer a:hover::after {
     position: relative;
     top: 0;
 }
-
+.svg-wrapper {
+    position: relative;
+    top: 0;
+}
+.svg-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
 
 
 
@@ -340,6 +350,9 @@ footer a:hover::after {
     .post {
         width: 400px;
         min-width: 340px;
+    }
+    .svg-wrapper img {
+        top: -10%;
     }
 }
 @media only screen and (max-width: 1075px) {
@@ -467,9 +480,25 @@ footer a:hover::after {
         transform: translateY(-10px) rotate(48deg);
     /*  translate(-9px, -12px) */
     }
+    .svg-wrapper img {
+        top: -15%;
+    }
 }
 @media only screen and (max-width: 500px) {
     .post-full img {
         width: 100%;
+    }
+    .svg-wrapper img {
+        top: -20%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .svg-wrapper img {
+        top: -30%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .svg-wrapper img {
+        top: -40%;
     }
 }
