@@ -1,0 +1,24 @@
+<div class="form-strip" id='contact'>
+    <i class="fas fa-paper-plane fa-2x"></i>
+    <h2>I'd love to hear from you.</h2>
+    <form id="fs-frm" class='contact-form' name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/xrgarqvb" method="POST">
+        <fieldset id="fs-frm-inputs">
+            <div class='fieldset-wrapper'>
+                <div class="name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Full Name" required="required">
+                </div>
+                <div class="email">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="required">
+                </div>
+            </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea class ='text-area' rows="5" name="message" id="message" placeholder="Leave me a message." required="required"></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+        </fieldset>
+        <input class='form-button' type="submit" value="Send">
+    </form>
+</div>

@@ -289,7 +289,7 @@ footer a:hover::after {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     position: relative;
-    top: -100px;
+    top: -150px;
 }
 .card-wrapper {
     display: flex;
@@ -333,13 +333,122 @@ footer a:hover::after {
 }
 .svg-wrapper img {
     position: absolute;
-    top: 0;
+    top: -5%;
     left: 0;
     z-index: 3;
     width: 100%;
 }
-
-
+/* --------- CONTACT STRIP ----------- */
+.form-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.form-strip i {
+    font-size: 3rem;
+    color: black;
+}
+.form-strip h2 {
+    color: black;
+    text-align: center;
+    font-weight: thin;
+    font-size: 2rem;
+    padding: 0 20px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+fieldset {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.fieldset-wrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+input, select, textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    height: 40px;
+    border: 1px solid lightgrey;
+    font-family: 'PT Sans', sans-serif;
+    transition: 0.2s ease all;
+}
+input:hover, select:hover, textarea:hover {
+    border: none;
+    background: black;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+}
+input:hover::placeholder, select:hover::placeholder, textarea:hover::placeholder {
+    color: white;
+}
+.text-area {
+    width: 95%;
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+    color:grey;
+}
+label {
+    visibility: hidden;
+}
+.message {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.message label, input {
+    width: 100%;
+}
+.form-button {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    transition: 0.3s ease all;
+    border-radius: 10px;
+    transition: 0.4s ease all;
+    color: grey;
+}
+.form-button:hover {
+    cursor: pointer;
+    color: white;
+}
+/* --------- FOOTER ----------- */
+.footer {
+    padding: 10px;
+    line-height: 0.8rem;
+    font-size: 0.9rem;
+}
+.footer a:hover {
+    color: grey;
+}
+.socials i {
+    font-size: 2rem;
+    margin: 10px;
+}
 
 /* --- MEDIA QUERIES --- */
 @media only screen and (max-width: 1200px) {
