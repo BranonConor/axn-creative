@@ -345,10 +345,21 @@ footer a:hover::after {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.form-strip:hover i {
+    transform: translateY(-10px) scale(1.20);
+}
+.form-strip hr {
+    width: 70%;
+    margin: 100px 0;
+    border: 1px solid lightgrey;
 }
 .form-strip i {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
+    transition: 0.6s ease all;
 }
 .form-strip h2 {
     color: black;
@@ -605,6 +616,38 @@ label {
     }
     .svg-wrapper img {
         top: -20%;
+    }
+
+    /* Contact strip */
+    form {
+        width: 100%;
+    }
+    fieldset {
+        width: 90%;
+    }
+    .fieldset-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: content;
+    }
+    .fieldset-wrapper div {
+        width: 90%;
+    }
+    input, select, textarea {
+        width: 90%;
+    }
+    .message {
+        width: 85.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    textarea {
+        position: relative;
+        left: 8.5%;
     }
 }
 @media only screen and (max-width: 450px) {
