@@ -66,6 +66,9 @@ p {
     max-width: 100%;
     min-height: 100%;
 }
+.welcome {
+    font-size: 2rem;
+}
 /* --- NAVIGATION --- */
 .nav {
     color: white;
@@ -251,16 +254,24 @@ footer a:hover::after {
 
 /* ------------ MARKDOWN FILE STYLING -------------*/
 .post-full {
-    padding: 20px 10%;
+    padding: 20px 20%;
 }
 .post-full h3, .post-full h4, .post-full h5, .post-full h6 {
     text-align: left;
 }
+.post-full p  {
+    text-align: left;
+}
 .post-full img {
-    width: 60%;
+    width: 85%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 2px 9px 1px #999;
+    position: relative;
+    left: 7.25%;
+}
+.post-full .post-meta {
+    text-align: center;
 }
 /* Article Snippet */
 .post img {
@@ -529,6 +540,13 @@ label {
     }
 }
 @media only screen and (max-width: 770px) {
+    .post-full {
+        padding: 20px 15%;
+    }
+    .post-full img {
+        width: 100%;
+        left: 0%;
+    }
     .sidebar {
         flex-direction: column;
         align-items: center;
@@ -614,10 +632,13 @@ label {
     .svg-wrapper img {
         top: -15%;
     }
+    .site-title {
+        display: none;
+    }
 }
 @media only screen and (max-width: 500px) {
-    .post-full img {
-        width: 100%;
+    .post-full {
+        padding: 20px 10%;
     }
     .svg-wrapper img {
         top: -20%;
