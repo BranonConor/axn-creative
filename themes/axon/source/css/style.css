@@ -137,7 +137,7 @@ p {
     height: auto; 
 }
 /* --- PROJECTS AND BLOG POSTS --- */
-.projects {
+.projects, .blog {
     display: flex;
     flex-direction: column;
     justify-content: center;
